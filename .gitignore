@@ -21,6 +21,10 @@ logs/
 *.log.*
 *.pid
 
+# Docs
+doc/
+docs/
+
 # Compiled class files
 *.class
 
