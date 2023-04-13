@@ -7,7 +7,7 @@ import java.util.Arrays;
  * Laufzeitverhalten des Sortierverfahrens ist O(n^2). Algorithmus
  * braucht n Schritte falls Input Sequenz bereits aufsteigend sortiert ist.
  * 
- * @param <E> Typisierter Paramenter, welcher sortiert werden soll.
+ * @param <E> Typisierter Paramenter der Elemente, welche sortiert werden sollen.
  */
 public class BubbleSortStrategy<E extends Comparable<E>> extends AbstractSortStrategy<E> {
 

@@ -4,7 +4,7 @@ package patterns.strategy;
  * Die Klasse <code>SortContext</code> ermöglicht es, die Sortier-Strategie 
  * während der Laufzeit dynamisch auszutauschen.
  *
- * @param <E> Typisierter Parameter der Elemente, welche sortiert werden.
+ * @param <E> Typisierter Parameter der Elemente, welche sortiert werden sollen.
  */
 public class SortContext <E extends Comparable<E>> {
 	private SortStrategy<E> strategy;

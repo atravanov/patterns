@@ -1,11 +1,11 @@
 package patterns.strategy;
 
 /**
- * Schnittstellenbeschreibung der Methoden für die Sortier-Strategy.
+ * Schnittstellenbeschreibung der Methoden für die Sortier-Strategie.
  * Neben der eigentlichen Sortier-Methode wird noch eine zusätzliche
- * Methode für die Laufzeit-Messung des Sortierverfahrens angeboten.
+ * Methode für die Laufzeit-Messung des Sortierverfahrens definiert.
  *
- * @param <E> Parametrisierter Typ  für die zu sortierenden Elemente.
+ * @param <E> Parametrisierter Typ der Elemente, welche sortiert werden sollen.
  */
 public interface SortStrategy <E extends Comparable<E>> {
 	/**

@@ -6,7 +6,7 @@ import java.util.Random;
 
 /**
  * Kunden Klasse, welche verschiedene Sortier-Strategien und Laufzeitberechnungen
- * durchführt
+ * durchführt.
  */
 public class SortClient {
 	private static final Random rnd;

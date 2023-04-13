@@ -1,10 +1,10 @@
 package patterns.strategy;
 
 /**
- * Abstrakte Klasse für die Sortier-Strategy, welche die Methode
- * zur Messung der Laufzeit konkret implementiert.
+ * Abstrakte Klasse für die Sortier-Strategie. Implementiert konkret nur die Methode
+ * zur Messung der Laufzeit.
  *
- * @param <E> Parametrisierter Typ des Sortier-Elements.
+ * @param <E> Parametrisierter Typ der Elemene, welche sortiert werden sollen.
  */
 public abstract class AbstractSortStrategy<E extends Comparable<E>> implements SortStrategy<E> {
 	@Override
