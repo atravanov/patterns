@@ -20,7 +20,7 @@ Million Mal verwenden kannst, ohne dass Du zweimal dasselbe machst.“
 ## Design Pattern: Strategy
 Das Strategy Design Pattern ist ein Entwurfsmuster, das es ermöglicht, Algorithmen in austauschbare Module zu unterteilen, die dynamisch ausgetauscht werden können, je nachdem welche Strategie zu einem bestimmten Zeitpunkt benötigt wird. Folgendes Klassendiagramm beschreibt das Pattern:
 
-![NY](state-pattern.drawio.PNG)
+![strategie](strategie-pattern.drawio.PNG)
 
 Ziel der folgenden Aufgaben ist es, das Strategy Design Pattern zu verwenden, um verschiedene Sortier-Algorithmen zu implementieren. Die Implementierung soll es ermöglichen, dass der Algorithmus zur Sortierung zur Laufzeit ausgetauscht werden kann, ohne dass der Rest des Codes davon betroffen ist. 
 
