@@ -1,7 +1,6 @@
 package patterns.strategy;
 
 import java.util.Arrays;
-import java.util.List;
 import java.util.Random;
 
 /**
@@ -16,17 +15,26 @@ public class SortClient {
 	}
 	
 	/**
-	 * Entrypoint Methode für die Durchführung der verschiedenen Sortierverfahren und
+	 * Entrypoint Methode für die Durchführung verschiedener Sortier-Strategien und
 	 * Laufzeitberechnungen.
-	 * @param args Argumente werden nicht verwendet.
+	 * @param args Folge von ganzen Zahlen, welche sortiert werden soll (separiert durch einzelne Blanks).
 	 */
 	public static void main(String[] args) {
 		SortStrategy<Integer> strategy = new BubbleSortStrategy<Integer>();
-		Integer[] elements = generateRandomNumbers(10,1000);
-		Integer[] elements1 = {10,9,8,7,6,5,4,3,2,1};
-		System.out.println(Arrays.toString(elements1));
-		long nanos = strategy.measureRuntime(elements1);
-		//System.out.println(Arrays.toString(elements1));
+		int size = args.length;
+		Integer[] elements;
+		if(args.length > 0) {
+			elements = new Integer[size];
+			for(int i=0;i<size;i++) {
+				elements[i] = Integer.valueOf(args[i]);
+			}
+		}
+		else {
+			elements = generateRandomNumbers(10,1000);
+		}
+		
+		System.out.println(Arrays.toString(elements));
+		long nanos = strategy.measureRuntime(elements);
 		System.out.println(nanos);
 	}
 	
