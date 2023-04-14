@@ -27,11 +27,5 @@ public class BubbleSortStrategy<E extends Comparable<E>> extends AbstractSortStr
 			}
 		}
 	}
-	
-	private void swap(E[] elements, int x, int y) { 
-		E z = elements[x];
-		elements[x] = elements[y];
-		elements[y] = z;
-	}
 }
 

@@ -7,7 +7,7 @@ package patterns.strategy;
  *
  * @param <E> Parametrisierter Typ der Elemente, welche sortiert werden sollen.
  */
-public interface SortStrategy <E extends Comparable<E>> {
+public interface SortStrategy <E> {
 	/**
 	 * Sortiert einen Array von Elementen aufsteigend.
 	 * @param elements Elemente, welche sortiert werden.

@@ -20,7 +20,7 @@ public class SortClient {
 	 * @param args Folge von ganzen Zahlen, welche sortiert werden soll (separiert durch einzelne Blanks).
 	 */
 	public static void main(String[] args) {
-		SortStrategy<Integer> strategy = new BubbleSortStrategy<Integer>();
+		SortStrategy<Integer> strategy = new HeapSortStrategy<Integer>();
 		int size = args.length;
 		Integer[] elements;
 		if(args.length > 0) {
@@ -35,6 +35,7 @@ public class SortClient {
 		
 		System.out.println(Arrays.toString(elements));
 		long nanos = strategy.measureRuntime(elements);
+		System.out.println(Arrays.toString(elements));
 		System.out.println(nanos);
 	}
 	

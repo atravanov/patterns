@@ -17,4 +17,10 @@ public abstract class AbstractSortStrategy<E extends Comparable<E>> implements S
 		long stop = System.nanoTime();
 		return stop - start;
 	}
+	
+	final void swap(E[] elements, int x, int y) { 
+		E z = elements[x];
+		elements[x] = elements[y];
+		elements[y] = z;
+	}
 }
